@@ -1,0 +1,7 @@
+requests
+
+[json]
+ujson
+
+[redis]
+redis>=3.4.1
