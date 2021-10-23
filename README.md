@@ -7,7 +7,7 @@ a) mask.sol is a basic implementation of the Uniswap v2 router to allow you to b
 
 b) main.py is the script that is constantly running looking for snipable tokens. For this to run properly you need:
 
-1. Git clone the entire repo for package dependencies in venv
+1. Install requirements.txt or git clone the entire repo for package dependencies in venv
 2. An etherscan API key
 3. An infura/quiknode https endpoint
 4. A deployed mask.sol contract address
