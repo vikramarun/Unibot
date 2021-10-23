@@ -3,7 +3,7 @@
 
 ### Components:
 
-a) mask.sol is a basic implementation of the Uniswap v2 router to allow you to swap tokens without sending transactions directly to the Uniswap router (which other bots are constantly monitoring). Deploy this using remix.ethereum.org from the address that will be doing the trading and input the contract address into the main script.
+a) mask.sol is a basic implementation of the Uniswap v2 router to allow you to buy tokens without sending transactions directly to the Uniswap router (which other bots are constantly monitoring). Deploy this using remix.ethereum.org from the address that will be doing the trading and input the contract address into the main script.
 
 b) main.py is the script that is constantly running looking for snipable tokens. For this to run properly you need:
 
@@ -28,4 +28,4 @@ You can mess around with the parameters and trade sizes based on liquidity, also
 2. Expand to Sushi, any other Uniswapv2 like router. Can use a similar structure across PancakeSwap as well
 3. Submit transactions normally as well as Flashbots to up chance of being included in a block
                                 
-## Disclaimers: This is purely beta software and if you dont know what you are doing and updating the logic you could lose money. Use at your own risk. This is not being maintained. 
+## Disclaimers: This is purely beta software and if you dont know what you are doing and updating the logic you will probably lose money. Use at your own risk. This is not being maintained. 
