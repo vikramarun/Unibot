@@ -3,14 +3,15 @@
 
 ### Components:
 
-a) mask.sol is a basic implementation of the Uniswap v2 router to allow you to swap tokens without sending transactions directly to the Uniswap router (which other bots are constantly monitoring)
+a) mask.sol is a basic implementation of the Uniswap v2 router to allow you to swap tokens without sending transactions directly to the Uniswap router (which other bots are constantly monitoring). Deploy this using remix.ethereum.org from the address that will be doing the trading and input the contract address into the main script.
 
 b) main.py is the script that is constantly running looking for snipable tokens. For this to run properly you need:
 
-1. An etherscan API key
-2. An infura/quiknode https endpoint
-3. A deployed mask.sol contract address (Deploy this using remix.ethereum.org from the address that will be doing the trading and input the contract address)
-4. Highly recommended you use botfather on telegram to make a new bot and chat with it to keep track of everything. Input the bot token and chat id into the script, it uses https://github.com/eternnoir/pyTelegramBotAPI
+1. Git clone the entire repo for package dependencies in venv
+2. An etherscan API key
+3. An infura/quiknode https endpoint
+4. A deployed mask.sol contract address
+5. Highly recommended you use botfather on telegram to make a new bot and chat with it to keep track of everything. Input the bot token and chat id into the script, it uses https://github.com/eternnoir/pyTelegramBotAPI
 
 You can mess around with the parameters and trade sizes based on liquidity, also slippage. 
 
