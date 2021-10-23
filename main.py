@@ -192,6 +192,7 @@ def getHolders(tokenaddress):
             time.sleep(3)
     return holders
 
+# get telgram group from contract if it exists and check to make sure it's real
 def getTgGroup(tokenaddress):
     while True:
         try:
@@ -234,7 +235,7 @@ def getTgGroup(tokenaddress):
             print('etherscan slow.............')
             time.sleep(1)
 
-# get potential links
+# get potential links on website
 def getTokenLinks(tokenaddress,contractaddress):
     tokenaddress = tokenaddress.lower()
     contractaddress = contractaddress.lower()
@@ -409,7 +410,7 @@ def makeTrade(tokenaddress,ethamount,slippage):
         'nonce': nonce,
         'to': Web3.toChecksumAddress(deployedcontractaddress),
         'value': ethamount,
-        'gas': 500000,
+        'gas': 250000,
         'gasPrice': int(2.5 * (w3.eth.gasPrice)),
         'from': my_address,
         'data': data
@@ -540,11 +541,10 @@ if __name__ == '__main__':
     # Get middleman smart contract to obfuscate tx
     with open('uniswap.txt') as json_file:
         data = json.load(json_file)  # middleman swap contract ABI
-        print(data)
     contract_address = Web3.toChecksumAddress(deployedcontractaddress)
     contract = w3.eth.contract(contract_address, abi=data)
     # Print current eth balance
-    print(str(uniconnect.get_eth_balance() / (10 ** 18)) + ' ETH in wallet at start')
+    print(str(uniconnect.get_eth_balance() / (wei) + ' ETH in wallet at start')
     while True:
         try:
             main()
