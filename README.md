@@ -28,4 +28,4 @@ You can mess around with the parameters and trade sizes based on liquidity, also
 2. Expand to Sushi, any other Uniswapv2 like router. Can use a similar structure across PancakeSwap as well
 3. Submit transactions normally as well as Flashbots to up chance of being included in a block
                                 
-## Disclaimers: This is purely beta software and if you dont know what you are doing and updating the logic you will probably lose money. Use at your own risk. This is not being maintained. 
+## Disclaimers: For educational purposes only. This is purely beta software and if you dont know what you are doing and updating the logic you will probably lose money. Use at your own risk. This is not being maintained. 
