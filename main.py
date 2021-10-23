@@ -192,7 +192,7 @@ def getHolders(tokenaddress):
             time.sleep(3)
     return holders
 
-# get telgram group from contract if it exists and check to make sure it's real
+# get telegram group from contract if it exists and check to make sure it's real
 def getTgGroup(tokenaddress):
     while True:
         try:
@@ -338,8 +338,6 @@ def getWebsite(tokenname,tokenaddress,contractaddress):
 # test listing against 6 key measures (visible contract, legit creation, safe code, pool liquidity, holders, and website)
 def testContract(contractaddress,tokenname,tokenaddress,contractdetails,minliquidity,maxliquidity,minholders,maxholders):
     testvariables = contractdetails[:3] # first three tests on the contract
-
-    # liquidity test, but scale liquidity needed in the pool if its a .finance by /2
     # only bother running if other contract tests have been positive
     if sum(testvariables) == len(testvariables):
         poolliq = pool_liquidity(contractaddress)
@@ -544,7 +542,7 @@ if __name__ == '__main__':
     contract_address = Web3.toChecksumAddress(deployedcontractaddress)
     contract = w3.eth.contract(contract_address, abi=data)
     # Print current eth balance
-    print(str(uniconnect.get_eth_balance() / (wei) + ' ETH in wallet at start')
+    print(str(uniconnect.get_eth_balance() / (wei) + ' ETH in wallet at start'))
     while True:
         try:
             main()
