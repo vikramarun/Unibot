@@ -1,5 +1,5 @@
 # Unibot
-## Buy Uniswapv2 Listings with some ape logic
+## Bot to constantly monitor and buy new "quality" Uniswapv2 Listings
 
 ### Components:
 
