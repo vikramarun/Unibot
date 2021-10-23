@@ -1,5 +1,5 @@
 # Unibot
-## Bot to constantly monitor and buy new "quality" Uniswapv2 Listings
+## Bot to constantly monitor and buy new potentially "quality" Uniswapv2 Listings
 
 ### Components:
 
@@ -26,3 +26,5 @@ You can mess around with the parameters and trade sizes based on liquidity, also
 1. Look at the mempool. Current function will only allow for the sniping of listings in the block after the listing
 2. Expand to Sushi, any other Uniswapv2 like router. Can use a similar structure across PancakeSwap as well
 3. Submit transactions normally as well as Flashbots to up chance of being included in a block
+                                
+## Disclaimers: This is purely beta software and if you dont know what you are doing and updating the logic you could lose money. Use at your own risk. This is not being maintained. 
